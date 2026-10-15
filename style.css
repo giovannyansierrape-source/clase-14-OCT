@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at top, #255dbd, #0e2d74 65%);
+    color: #ff0000;
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta {
+    width: min(100%, 420px);
+    text-align: center;
+    background: #791414;
+    border: 1px solid #f9f8f8;
+    border-radius: 24px;
+    padding: 35px 26px;
+    box-shadow: 0 20px 65px rgba(93, 6, 6, 0.4);
+}
+
+.etiqueta {
+    color: #022556;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: #ee22c2;
+    letter-spacing: 3px;
+    font-size: clamp(25px, 6vw, 36px);
+    margin: 16px 0 10px;
+}
+
+.subtitulo {
+    color: #030303;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.pantalla {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 24px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #67e8f9;
+    text-shadow: 0 0 25px #22d3ee77;
+    margin-bottom: 22px;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    border: 0;
+    border-radius: 12px;
+    padding: 15px;
+    background: #ee22d6;
+    color: #190187;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .15s, filter .15s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+button.secundario {
+    background: #006aff;
+    color: white;
+}
+
+button.reiniciar {
+    margin-top: 14px;
+    background: transparent;
+    color: #017f46;
+    border: 1px solid #025949;
+    width: 100%;
+}
+
